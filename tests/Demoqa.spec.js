@@ -106,7 +106,7 @@ test('Web Tables', async ({ page }) => {
   });
 
 
-  test.only('Upload Download', async ({ page }) => {
+  test('Upload Download', async ({ page }) => {
     await page.goto('https://demoqa.com/upload-download');
     // Vérification de l'URL de la page
     await expect(page).toHaveURL('https://demoqa.com/upload-download'); 
