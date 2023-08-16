@@ -93,7 +93,6 @@ test('Web Tables', async ({ page }) => {
     // Vérification de l'URL de la page
     await expect(page).toHaveURL('https://demoqa.com/webtables'); 
 
-    await page.frameLocator('iframe[name="google_ads_iframe_\\/21849154601\\,22343295815\\/Ad\\.Plus-Anchor_0"]').locator('#cbb').click();
     await page.getByRole('button', { name: 'Add' }).click();
     await page.getByPlaceholder('First Name').fill('Alex');
     await page.getByPlaceholder('Last Name').fill('marin');
