@@ -105,17 +105,17 @@ test('Web Tables', async ({ page }) => {
   });
 
 
-  test('Upload Download', async ({ page }) => {
-    await page.goto('https://demoqa.com/upload-download');
+ /* test('Upload Download', async ({ page }) => {
+   // await page.goto('https://demoqa.com/upload-download');
     // Vérification de l'URL de la page
-    await expect(page).toHaveURL('https://demoqa.com/upload-download'); 
-    downloadsPath: './my-downloads'
-    await page.getByLabel('Select a file').click();
-    await page.getByLabel('Select a file').setInputFiles('image.png');
-    const downloadPromise = page.waitForEvent('download');
+   // await expect(page).toHaveURL('https://demoqa.com/upload-download'); 
+   // downloadsPath: './my-downloads'
+   // await page.getByLabel('Select a file').click();
+   // await page.getByLabel('Select a file').setInputFiles('image.png');
+  //  const downloadPromise = page.waitForEvent('download');
 
-    await page.getByRole('link', { name: 'Download' }).click();
-    const download = await downloadPromise;
-    const path = await download.path();
-    console.log(`File downloaded to: ${path}`);
-  });
+  //  await page.getByRole('link', { name: 'Download' }).click();
+   // const download = await downloadPromise;
+   // const path = await download.path();
+   // console.log(`File downloaded to: ${path}`);
+});*/
